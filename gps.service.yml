@@ -1,11 +1,11 @@
 version: '3'
 services:
-  gps4me:
-    image: gps4me:2022.09
-    container_name: gps4me
+  gps_service:
+    image: gps_service:2022.09
+    container_name: gps_service
     environment:
       - GPSUSBPort=/dev/ttyUSB0
-      - RedisIP=192.168.1.169
+      - RedisIP=192.168.0.1
       - RedisPort=16379
       - RedisPassword=zaq1xsw2cde3
     volumes:
